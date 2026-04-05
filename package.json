@@ -1,0 +1,14 @@
+{
+  "name": "dataflip",
+  "version": "1.0.0",
+  "description": "CSV ↔ JSON Converter API - Serverless",
+  "main": "api/process.js",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "vercel-build": "echo 'Build complete'"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "DataFlip",
+  "slug": "dataflip",
+  "tagline": "CSV ↔ JSON Converter API - Serverless",
+  "description": "Transform CSV data to JSON instantly with our serverless API. Stream processing, schema detection, and nested JSON support. One-time payment, unlimited use.",
+  "price": "14",
+  "features": [
+    "Unlimited CSV to JSON conversion",
+    "Unlimited JSON to CSV conversion",
+    "Schema detection",
+    "Nested JSON support",
+    "Secure serverless processing",
+    "License key protection"
+  ],
+  "tech_stack": "Vercel + Node.js",
+  "status": "ready_for_deploy",
+  "vercel_url": null,
+  "github_url": null,
+  "lemonsqueezy_checkout_url": null,
+  "lemonsqueezy_product_id": null,
+  "webhook_url": null,
+  "created_cycle": 368,
+  "deployed_cycle": null,
+  "health_check_endpoint": "/api/health"
+}
