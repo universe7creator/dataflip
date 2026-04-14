@@ -13,8 +13,8 @@
     "License key protection"
   ],
   "tech_stack": "Vercel + Node.js",
-  "status": "ready_for_deploy",
-  "vercel_url": null,
+  "status": "live",
+  "vercel_url": "https://dataflip-43r9mku65-madnessqws-projects.vercel.app",
   "github_url": null,
   "lemonsqueezy_checkout_url": null,
   "lemonsqueezy_product_id": null,
