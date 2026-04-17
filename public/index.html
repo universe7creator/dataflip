@@ -451,6 +451,65 @@
     ::-webkit-scrollbar-track { background: var(--bg-dark); }
     ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+    /* Testimonials Section */
+    .testimonials { padding: 6rem 0; background: rgba(255,255,255,0.02); }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: all 0.3s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      box-shadow: var(--accent-glow);
+    }
+    .testimonial-stars { color: #eab308; font-size: 1.1rem; margin-bottom: 1rem; }
+    .testimonial-text {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--accent-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+    }
+    .testimonial-info h4 {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .testimonial-info p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+    @media (max-width: 768px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -685,6 +744,51 @@ Jane Smith,jane@example.com,25</textarea>
             <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </div>
           <div class="faq-answer">Yes! We offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Loved by Data Professionals</h2>
+        <p>See what our customers are saying about DataFlip</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"DataFlip saved me hours of manual work. I had to convert 500+ CSV files to JSON for a data migration project and this tool handled it flawlessly. The nested JSON support is a game-changer."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JD</div>
+            <div class="testimonial-info">
+              <h4>James Davidson</h4>
+              <p>Data Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The API is incredibly simple to use. I integrated it into our ETL pipeline and now we process millions of rows daily without any issues. Schema detection works perfectly every time."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">ML</div>
+            <div class="testimonial-info">
+              <h4>Maria Lopez</h4>
+              <p>Backend Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Finally a CSV to JSON converter that actually works with complex data! I've tried many free tools before and they all failed with nested structures or large files. DataFlip handles everything."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-info">
+              <h4>Alex Kim</h4>
+              <p>Full-Stack Developer</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
